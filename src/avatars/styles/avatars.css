@@ -1,1 +1,14 @@
 /* 여기에 스타일을 구현해 주세요 */
+
+.wimg,
+.mimg {
+  display: flex;
+  gap: 20px;
+}
+
+.wimg img,
+.mimg img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
