@@ -1,1 +1,63 @@
 /* CSS를 활용하여 레이아웃 및 스타일링을 완성해주세요 */
+body {
+  margin: 20;
+}
+
+.ui {
+  --size: 16px;
+  --color: #121212;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  display: block;
+  margin-bottom: 30px;
+  width: 230px;
+  height: auto;
+}
+
+.input input {
+  display: block;
+  width: 500px;
+  height: 44px;
+  margin: 10px auto;
+  padding: 8px 12px;
+  gap: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+
+.input input:focus {
+  border: 1px solid #03cf5d;
+  background-color: #e4f1fc;
+  outline: none;
+}
+
+.errormessage {
+  display: none;
+  color: red;
+  font-size: 10px;
+  text-align: left;
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+
+.input input:focus + .errormessage {
+  display: block;
+}
+
+.login {
+  display: block;
+  width: 500px;
+  height: 44px;
+  background-color: #03cf5d;
+  border: none;
+  box-sizing: border-box;
+  color: white;
+  margin-top: 15px;
+}
